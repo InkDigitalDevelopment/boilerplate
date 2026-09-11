@@ -219,6 +219,44 @@ ul.nav-menu {
 .contact-content .contact-content-inner form .forminator-error-message {
     padding: 10px !important;
 }
+/* Plugin-neutral form styling for the Form + Content component. */
+.form-content-panel form {
+    display: grid;
+    gap: 1rem;
+}
+.form-content-panel label {
+    display: block;
+    color: #40506a;
+    font-size: .875rem;
+    font-weight: 600;
+}
+.form-content-panel input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]),
+.form-content-panel select,
+.form-content-panel textarea {
+    display: block;
+    width: 100%;
+    margin-top: .45rem;
+    padding: .8rem .9rem;
+    border: 1px solid #d9e1ec;
+    border-radius: .25rem;
+    background: #f8fafc;
+    color: #09152f;
+}
+.form-content-panel textarea {
+    min-height: 8rem;
+    resize: vertical;
+}
+.form-content-panel button,
+.form-content-panel input[type="submit"] {
+    width: fit-content;
+    padding: .8rem 1.25rem;
+    border: 0;
+    border-radius: .25rem;
+    background: #0867f2;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
 /* Blog pagination */
 .blog .blog-pagination {
     display: flex;

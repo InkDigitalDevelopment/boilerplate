@@ -1,0 +1,28 @@
+{
+  "$schema": "https://raw.githubusercontent.com/AdvancedCustomFields/schemas/refs/heads/main/json/block.json",
+  "apiVersion": 3,
+  "name": "inkwell/quote-feature",
+  "title": "Quote",
+  "description": "Large testimonial with portrait and attribution.",
+  "category": "inkwell-components",
+  "icon": "format-quote",
+  "keywords": [
+    "quote",
+    "feature"
+  ],
+  "acf": {
+    "blockVersion": 3,
+    "renderTemplate": "render.php",
+    "hideFieldsInSidebar": true,
+    "expandedEditorButtonText": "Edit Quote",
+    "expandedEditorButtons": {
+      "sidebar": false,
+      "toolbar": true
+    }
+  },
+  "supports": {
+    "align": false,
+    "anchor": true,
+    "customClassName": false
+  }
+}

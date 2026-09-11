@@ -1,0 +1,158 @@
+[
+  {
+    "key": "group_inkwell_hero_split",
+    "title": "Block: Hero Split",
+    "fields": [
+      {
+        "key": "field_inkwell_hero_split_eyebrow",
+        "label": "Eyebrow",
+        "name": "hero_split_eyebrow",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_hero_split_title",
+        "label": "Title",
+        "name": "hero_split_title",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_hero_split_copy",
+        "label": "Copy",
+        "name": "hero_split_copy",
+        "type": "wysiwyg",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 0,
+        "delay": 0
+      },
+      {
+        "key": "field_inkwell_hero_split_primary_cta",
+        "label": "Primary CTA",
+        "name": "hero_split_primary_cta",
+        "type": "link",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "return_format": "array"
+      },
+      {
+        "key": "field_inkwell_hero_split_secondary_cta",
+        "label": "Secondary CTA",
+        "name": "hero_split_secondary_cta",
+        "type": "link",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "return_format": "array"
+      },
+      {
+        "key": "field_inkwell_hero_split_benefits",
+        "label": "Benefits",
+        "name": "hero_split_benefits",
+        "type": "repeater",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "layout": "block",
+        "pagination": 0,
+        "min": 0,
+        "max": 4,
+        "collapsed": "field_inkwell_hero_split_benefit_text",
+        "button_label": "Add Benefit",
+        "rows_per_page": 20,
+        "sub_fields": [
+          {
+            "key": "field_inkwell_hero_split_benefit_text",
+            "label": "Benefit",
+            "name": "hero_split_benefit_text",
+            "type": "text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": ""
+          }
+        ]
+      },
+      {
+        "key": "field_inkwell_hero_split_image",
+        "label": "Image",
+        "name": "hero_split_image",
+        "type": "image",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "return_format": "array",
+        "library": "all",
+        "preview_size": "medium"
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "inkwell/hero-split"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Fields for the Hero Split block.",
+    "show_in_rest": 0
+  }
+]

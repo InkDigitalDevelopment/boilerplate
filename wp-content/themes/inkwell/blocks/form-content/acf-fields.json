@@ -1,0 +1,141 @@
+[
+  {
+    "key": "group_inkwell_form_content",
+    "title": "Block: Form + Content",
+    "fields": [
+      {
+        "key": "field_inkwell_form_content_eyebrow",
+        "label": "Eyebrow",
+        "name": "form_content_eyebrow",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_form_content_title",
+        "label": "Title",
+        "name": "form_content_title",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_form_content_copy",
+        "label": "Copy",
+        "name": "form_content_copy",
+        "type": "wysiwyg",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 0,
+        "delay": 0
+      },
+      {
+        "key": "field_inkwell_form_content_phone",
+        "label": "Phone",
+        "name": "form_content_phone",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_form_content_email",
+        "label": "Email",
+        "name": "form_content_email",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_form_content_address",
+        "label": "Address",
+        "name": "form_content_address",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_form_content_shortcode",
+        "label": "Form Shortcode",
+        "name": "form_content_shortcode",
+        "type": "textarea",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "rows": 2,
+        "new_lines": "",
+        "instructions": "Paste a shortcode from your chosen WordPress form plugin."
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "inkwell/form-content"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Fields for the Form + Content block.",
+    "show_in_rest": 0
+  }
+]

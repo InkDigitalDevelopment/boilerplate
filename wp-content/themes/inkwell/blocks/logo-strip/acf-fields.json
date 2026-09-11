@@ -1,0 +1,94 @@
+[
+  {
+    "key": "group_inkwell_logo_strip",
+    "title": "Block: Logo Strip",
+    "fields": [
+      {
+        "key": "field_inkwell_logo_strip_eyebrow",
+        "label": "Eyebrow",
+        "name": "logo_strip_eyebrow",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_logo_strip_logos",
+        "label": "Logos",
+        "name": "logo_strip_logos",
+        "type": "repeater",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "layout": "block",
+        "pagination": 0,
+        "min": 0,
+        "max": 8,
+        "collapsed": "field_inkwell_logo_strip_logo",
+        "button_label": "Add Logo",
+        "rows_per_page": 20,
+        "sub_fields": [
+          {
+            "key": "field_inkwell_logo_strip_logo",
+            "label": "Logo",
+            "name": "logo_strip_logo",
+            "type": "image",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "preview_size": "medium"
+          },
+          {
+            "key": "field_inkwell_logo_strip_link",
+            "label": "Link",
+            "name": "logo_strip_link",
+            "type": "link",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "return_format": "array"
+          }
+        ]
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "inkwell/logo-strip"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Fields for the Logo Strip block.",
+    "show_in_rest": 0
+  }
+]

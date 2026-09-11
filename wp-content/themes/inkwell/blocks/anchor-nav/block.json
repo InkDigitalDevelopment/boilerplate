@@ -1,0 +1,28 @@
+{
+  "$schema": "https://raw.githubusercontent.com/AdvancedCustomFields/schemas/refs/heads/main/json/block.json",
+  "apiVersion": 3,
+  "name": "inkwell/anchor-nav",
+  "title": "Anchor Navigation",
+  "description": "Horizontal in-page anchor links and a call to action.",
+  "category": "inkwell-components",
+  "icon": "menu-alt3",
+  "keywords": [
+    "anchor",
+    "nav"
+  ],
+  "acf": {
+    "blockVersion": 3,
+    "renderTemplate": "render.php",
+    "hideFieldsInSidebar": true,
+    "expandedEditorButtonText": "Edit Anchor Navigation",
+    "expandedEditorButtons": {
+      "sidebar": false,
+      "toolbar": true
+    }
+  },
+  "supports": {
+    "align": false,
+    "anchor": true,
+    "customClassName": false
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://raw.githubusercontent.com/AdvancedCustomFields/schemas/refs/heads/main/json/block.json",
+  "apiVersion": 3,
+  "name": "inkwell/form-content",
+  "title": "Form + Content",
+  "description": "Contact content and details beside a form shortcode.",
+  "category": "inkwell-components",
+  "icon": "feedback",
+  "keywords": [
+    "form",
+    "content"
+  ],
+  "acf": {
+    "blockVersion": 3,
+    "renderTemplate": "render.php",
+    "hideFieldsInSidebar": true,
+    "expandedEditorButtonText": "Edit Form + Content",
+    "expandedEditorButtons": {
+      "sidebar": false,
+      "toolbar": true
+    }
+  },
+  "supports": {
+    "align": false,
+    "anchor": true,
+    "customClassName": false
+  }
+}

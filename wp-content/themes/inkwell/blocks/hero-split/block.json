@@ -1,0 +1,28 @@
+{
+  "$schema": "https://raw.githubusercontent.com/AdvancedCustomFields/schemas/refs/heads/main/json/block.json",
+  "apiVersion": 3,
+  "name": "inkwell/hero-split",
+  "title": "Hero Split",
+  "description": "Split hero with calls to action, benefits and an image.",
+  "category": "inkwell-components",
+  "icon": "cover-image",
+  "keywords": [
+    "hero",
+    "split"
+  ],
+  "acf": {
+    "blockVersion": 3,
+    "renderTemplate": "render.php",
+    "hideFieldsInSidebar": true,
+    "expandedEditorButtonText": "Edit Hero Split",
+    "expandedEditorButtons": {
+      "sidebar": false,
+      "toolbar": true
+    }
+  },
+  "supports": {
+    "align": false,
+    "anchor": true,
+    "customClassName": false
+  }
+}

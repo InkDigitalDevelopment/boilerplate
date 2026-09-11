@@ -1,0 +1,28 @@
+{
+  "$schema": "https://raw.githubusercontent.com/AdvancedCustomFields/schemas/refs/heads/main/json/block.json",
+  "apiVersion": 3,
+  "name": "inkwell/logo-strip",
+  "title": "Logo Strip",
+  "description": "A row of linked client or partner logos.",
+  "category": "inkwell-components",
+  "icon": "images-alt2",
+  "keywords": [
+    "logo",
+    "strip"
+  ],
+  "acf": {
+    "blockVersion": 3,
+    "renderTemplate": "render.php",
+    "hideFieldsInSidebar": true,
+    "expandedEditorButtonText": "Edit Logo Strip",
+    "expandedEditorButtons": {
+      "sidebar": false,
+      "toolbar": true
+    }
+  },
+  "supports": {
+    "align": false,
+    "anchor": true,
+    "customClassName": false
+  }
+}

@@ -1,0 +1,115 @@
+[
+  {
+    "key": "group_inkwell_latest_posts",
+    "title": "Block: Latest Posts",
+    "fields": [
+      {
+        "key": "field_inkwell_latest_posts_eyebrow",
+        "label": "Eyebrow",
+        "name": "latest_posts_eyebrow",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_latest_posts_title",
+        "label": "Title",
+        "name": "latest_posts_title",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_latest_posts_archive_link",
+        "label": "Archive Link",
+        "name": "latest_posts_archive_link",
+        "type": "link",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "return_format": "array"
+      },
+      {
+        "key": "field_inkwell_latest_posts_posts",
+        "label": "Selected Posts",
+        "name": "latest_posts_posts",
+        "type": "relationship",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "post_type": [
+          "post"
+        ],
+        "post_status": [
+          "publish"
+        ],
+        "filters": [
+          "search",
+          "taxonomy"
+        ],
+        "return_format": "object",
+        "min": 0,
+        "max": 6
+      },
+      {
+        "key": "field_inkwell_latest_posts_count",
+        "label": "Number of Posts",
+        "name": "latest_posts_count",
+        "type": "number",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": 3,
+        "min": 1,
+        "step": 1,
+        "max": 6
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "inkwell/latest-posts"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Fields for the Latest Posts block.",
+    "show_in_rest": 0
+  }
+]

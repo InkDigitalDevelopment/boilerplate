@@ -30,6 +30,8 @@ Use the BrowserSync address printed in the terminal for automatic refresh. Keep 
 
 ACF Pro is installed separately when you want to use the component blocks. The theme can run without it, and shows a dependency notice in WordPress admin.
 
+The theme includes 12 design-library components matching the supplied reference: Hero Split, Logo Strip, Icon Grid, Process Steps, Team Grid, Featured Case Study, Latest Posts, Form + Content, Anchor Navigation, Content Columns, Full Width Media and Quote. Every component has its own importable `acf-fields.json` file alongside its `block.json` and PHP renderer.
+
 ## Files to change for each project
 
 All theme paths are under `wp-content/themes/inkwell/`.

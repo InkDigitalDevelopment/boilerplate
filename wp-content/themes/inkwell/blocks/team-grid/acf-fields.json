@@ -1,0 +1,173 @@
+[
+  {
+    "key": "group_inkwell_team_grid",
+    "title": "Block: Team Grid",
+    "fields": [
+      {
+        "key": "field_inkwell_team_grid_eyebrow",
+        "label": "Eyebrow",
+        "name": "team_grid_eyebrow",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_team_grid_title",
+        "label": "Title",
+        "name": "team_grid_title",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_team_grid_members",
+        "label": "Team Members",
+        "name": "team_grid_members",
+        "type": "repeater",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "layout": "block",
+        "pagination": 0,
+        "min": 0,
+        "max": 8,
+        "collapsed": "field_inkwell_team_grid_photo",
+        "button_label": "Add Team Member",
+        "rows_per_page": 20,
+        "sub_fields": [
+          {
+            "key": "field_inkwell_team_grid_photo",
+            "label": "Photo",
+            "name": "team_grid_photo",
+            "type": "image",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "preview_size": "medium"
+          },
+          {
+            "key": "field_inkwell_team_grid_name",
+            "label": "Name",
+            "name": "team_grid_name",
+            "type": "text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": ""
+          },
+          {
+            "key": "field_inkwell_team_grid_role",
+            "label": "Role",
+            "name": "team_grid_role",
+            "type": "text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": ""
+          },
+          {
+            "key": "field_inkwell_team_grid_linkedin",
+            "label": "LinkedIn URL",
+            "name": "team_grid_linkedin",
+            "type": "url",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+          },
+          {
+            "key": "field_inkwell_team_grid_x",
+            "label": "X / Twitter URL",
+            "name": "team_grid_x",
+            "type": "url",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+          },
+          {
+            "key": "field_inkwell_team_grid_instagram",
+            "label": "Instagram URL",
+            "name": "team_grid_instagram",
+            "type": "url",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+          }
+        ]
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "inkwell/team-grid"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Fields for the Team Grid block.",
+    "show_in_rest": 0
+  }
+]

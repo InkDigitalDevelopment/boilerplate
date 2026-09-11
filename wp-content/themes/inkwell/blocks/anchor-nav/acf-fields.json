@@ -1,0 +1,95 @@
+[
+  {
+    "key": "group_inkwell_anchor_nav",
+    "title": "Block: Anchor Navigation",
+    "fields": [
+      {
+        "key": "field_inkwell_anchor_nav_links",
+        "label": "Navigation Links",
+        "name": "anchor_nav_links",
+        "type": "repeater",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "layout": "block",
+        "pagination": 0,
+        "min": 0,
+        "max": 8,
+        "collapsed": "field_inkwell_anchor_nav_label",
+        "button_label": "Add Navigation Link",
+        "rows_per_page": 20,
+        "sub_fields": [
+          {
+            "key": "field_inkwell_anchor_nav_label",
+            "label": "Label",
+            "name": "anchor_nav_label",
+            "type": "text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": ""
+          },
+          {
+            "key": "field_inkwell_anchor_nav_anchor",
+            "label": "Anchor",
+            "name": "anchor_nav_anchor",
+            "type": "text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "instructions": "Enter the section anchor without the # symbol."
+          }
+        ]
+      },
+      {
+        "key": "field_inkwell_anchor_nav_cta",
+        "label": "CTA",
+        "name": "anchor_nav_cta",
+        "type": "link",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "return_format": "array"
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "inkwell/anchor-nav"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Fields for the Anchor Navigation block.",
+    "show_in_rest": 0
+  }
+]

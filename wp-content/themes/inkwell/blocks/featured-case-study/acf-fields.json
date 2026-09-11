@@ -1,0 +1,160 @@
+[
+  {
+    "key": "group_inkwell_featured_case_study",
+    "title": "Block: Featured Case Study",
+    "fields": [
+      {
+        "key": "field_inkwell_featured_case_study_eyebrow",
+        "label": "Eyebrow",
+        "name": "featured_case_study_eyebrow",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_featured_case_study_title",
+        "label": "Title",
+        "name": "featured_case_study_title",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_featured_case_study_copy",
+        "label": "Copy",
+        "name": "featured_case_study_copy",
+        "type": "wysiwyg",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 0,
+        "delay": 0
+      },
+      {
+        "key": "field_inkwell_featured_case_study_cta",
+        "label": "CTA",
+        "name": "featured_case_study_cta",
+        "type": "link",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "return_format": "array"
+      },
+      {
+        "key": "field_inkwell_featured_case_study_image",
+        "label": "Image",
+        "name": "featured_case_study_image",
+        "type": "image",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "return_format": "array",
+        "library": "all",
+        "preview_size": "medium"
+      },
+      {
+        "key": "field_inkwell_featured_case_study_stats",
+        "label": "Statistics",
+        "name": "featured_case_study_stats",
+        "type": "repeater",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "layout": "block",
+        "pagination": 0,
+        "min": 0,
+        "max": 4,
+        "collapsed": "field_inkwell_featured_case_study_stat_value",
+        "button_label": "Add Statistic",
+        "rows_per_page": 20,
+        "sub_fields": [
+          {
+            "key": "field_inkwell_featured_case_study_stat_value",
+            "label": "Value",
+            "name": "featured_case_study_stat_value",
+            "type": "text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": ""
+          },
+          {
+            "key": "field_inkwell_featured_case_study_stat_label",
+            "label": "Label",
+            "name": "featured_case_study_stat_label",
+            "type": "text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": ""
+          }
+        ]
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "inkwell/featured-case-study"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Fields for the Featured Case Study block.",
+    "show_in_rest": 0
+  }
+]

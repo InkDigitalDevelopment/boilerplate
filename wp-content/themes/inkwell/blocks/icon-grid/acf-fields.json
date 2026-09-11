@@ -1,0 +1,138 @@
+[
+  {
+    "key": "group_inkwell_icon_grid",
+    "title": "Block: Icon Grid",
+    "fields": [
+      {
+        "key": "field_inkwell_icon_grid_eyebrow",
+        "label": "Eyebrow",
+        "name": "icon_grid_eyebrow",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_icon_grid_title",
+        "label": "Title",
+        "name": "icon_grid_title",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_icon_grid_items",
+        "label": "Items",
+        "name": "icon_grid_items",
+        "type": "repeater",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "layout": "block",
+        "pagination": 0,
+        "min": 0,
+        "max": 6,
+        "collapsed": "field_inkwell_icon_grid_icon",
+        "button_label": "Add Item",
+        "rows_per_page": 20,
+        "sub_fields": [
+          {
+            "key": "field_inkwell_icon_grid_icon",
+            "label": "Icon",
+            "name": "icon_grid_icon",
+            "type": "select",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "choices": {
+              "strategy": "Strategy",
+              "layers": "Layers / design",
+              "code": "Code / development",
+              "support": "Support",
+              "lightbulb": "Lightbulb",
+              "pencil": "Pencil"
+            },
+            "default_value": "strategy",
+            "return_format": "value",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0
+          },
+          {
+            "key": "field_inkwell_icon_grid_item_title",
+            "label": "Title",
+            "name": "icon_grid_item_title",
+            "type": "text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": ""
+          },
+          {
+            "key": "field_inkwell_icon_grid_item_copy",
+            "label": "Copy",
+            "name": "icon_grid_item_copy",
+            "type": "textarea",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "rows": 4,
+            "new_lines": "br"
+          }
+        ]
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "inkwell/icon-grid"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Fields for the Icon Grid block.",
+    "show_in_rest": 0
+  }
+]

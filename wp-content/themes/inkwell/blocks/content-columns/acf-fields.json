@@ -1,0 +1,156 @@
+[
+  {
+    "key": "group_inkwell_content_columns",
+    "title": "Block: Content Columns",
+    "fields": [
+      {
+        "key": "field_inkwell_content_columns_eyebrow",
+        "label": "Eyebrow",
+        "name": "content_columns_eyebrow",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_content_columns_title",
+        "label": "Title",
+        "name": "content_columns_title",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_content_columns_copy",
+        "label": "Copy",
+        "name": "content_columns_copy",
+        "type": "wysiwyg",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 0,
+        "delay": 0
+      },
+      {
+        "key": "field_inkwell_content_columns_items",
+        "label": "Items",
+        "name": "content_columns_items",
+        "type": "repeater",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "layout": "block",
+        "pagination": 0,
+        "min": 0,
+        "max": 5,
+        "collapsed": "field_inkwell_content_columns_icon",
+        "button_label": "Add Item",
+        "rows_per_page": 20,
+        "sub_fields": [
+          {
+            "key": "field_inkwell_content_columns_icon",
+            "label": "Icon",
+            "name": "content_columns_icon",
+            "type": "select",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "choices": {
+              "strategy": "Strategy",
+              "layers": "Layers / design",
+              "code": "Code / development",
+              "support": "Support",
+              "lightbulb": "Lightbulb",
+              "pencil": "Pencil"
+            },
+            "default_value": "strategy",
+            "return_format": "value",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0
+          },
+          {
+            "key": "field_inkwell_content_columns_item_title",
+            "label": "Title",
+            "name": "content_columns_item_title",
+            "type": "text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": ""
+          },
+          {
+            "key": "field_inkwell_content_columns_item_copy",
+            "label": "Copy",
+            "name": "content_columns_item_copy",
+            "type": "textarea",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "rows": 4,
+            "new_lines": "br"
+          }
+        ]
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "inkwell/content-columns"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Fields for the Content Columns block.",
+    "show_in_rest": 0
+  }
+]
