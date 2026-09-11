@@ -31,9 +31,10 @@ function fixture(t) {
   put(sourceRoot, theme + 'dist/app.js', 'stale build');
   put(sourceRoot, theme + '.env', 'excluded');
   const calls = [];
-  const tools = { wp: { command: 'wp' }, npm: { command: 'npm' } };
+  const tools = { wp: { command: 'wp' }, npm: { command: 'npm' }, git: { command: 'git' } };
   const run = (tool, args, options) => {
     calls.push({ tool: tool.command, args, options });
+    if (tool.command === 'git' && args[0] === 'init') fs.mkdirSync(path.join(target, '.git'));
     return args.includes('home') ? 'http://client-name.local\n' : '';
   };
   return { sourceRoot, target, put, calls, tools, run, log: () => {} };
@@ -48,8 +49,28 @@ test('fresh install excludes local data and only activates the theme', async t =
   for (const file of ['node_modules', 'dist', '.env']) assert(!fs.existsSync(path.join(theme, file)));
   assert.equal(fs.readFileSync(path.join(options.target, 'wp-config.php'), 'utf8'), 'local connection settings');
   assert.equal(options.calls.filter(call => call.tool === 'npm').length, 2);
+  assert.deepEqual(
+    options.calls.filter(call => call.tool === 'git').map(call => call.args),
+    [
+      ['init', '--initial-branch=main'],
+      ['add', '.'],
+      ['commit', '-m', 'Initial project setup'],
+    ],
+  );
   assert(options.calls.some(call => call.args.slice(-3).join(' ') === 'theme activate inkwell'));
   assert(!options.calls.some(call => call.args.includes('plugin') || call.args.includes('post') || call.args.includes('update')));
+});
+
+test('a non-empty GitHub repository is rejected before files are copied', async t => {
+  const options = fixture(t);
+  const remote = 'https://github.com/InkDigitalDevelopment/existing-project.git';
+  const run = (tool, args, config) => {
+    if (tool.command === 'git' && args[0] === 'ls-remote') return 'abc123\trefs/heads/main\n';
+    return options.run(tool, args, config);
+  };
+  await assert.rejects(installSite({ ...options, run, gitRemote: remote }), /not empty/);
+  assert(!fs.existsSync(path.join(options.target, '.inkwell-install.json')));
+  assert(!fs.existsSync(path.join(options.target, 'wp-content/themes/inkwell')));
 });
 
 test('dry run writes no files and runs no installation commands', async t => {
@@ -102,6 +123,37 @@ test('root package files are protected', async t => {
   const options = fixture(t);
   options.put(options.target, 'package.json', '{"name":"existing"}');
   await assert.rejects(installSite(options), /Already exists: package.json/);
+});
+
+test('existing Git repositories are protected', async t => {
+  const options = fixture(t);
+  fs.mkdirSync(path.join(options.target, '.git'));
+  await assert.rejects(installSite(options), /Already exists: \.git/);
+  assert.equal(options.calls.length, 0);
+});
+
+test('an empty GitHub remote is added and pushed when supplied', async t => {
+  const options = fixture(t);
+  const remote = 'https://github.com/InkDigitalDevelopment/client-project.git';
+  await installSite({ ...options, gitRemote: remote });
+  assert.deepEqual(
+    options.calls.filter(call => call.tool === 'git').map(call => call.args),
+    [
+      ['ls-remote', '--heads', remote],
+      ['init', '--initial-branch=main'],
+      ['add', '.'],
+      ['commit', '-m', 'Initial project setup'],
+      ['remote', 'add', 'origin', remote],
+      ['push', '-u', 'origin', 'main'],
+    ],
+  );
+});
+
+test('unsafe Git remote URLs are rejected before changes', async t => {
+  const options = fixture(t);
+  await assert.rejects(installSite({ ...options, gitRemote: 'https://user:secret@github.com/owner/repo.git' }), /without credentials/);
+  assert.equal(options.calls.length, 0);
+  assert(!fs.existsSync(path.join(options.target, '.inkwell-install.json')));
 });
 
 test('theme directory junctions outside the site are rejected', async t => {

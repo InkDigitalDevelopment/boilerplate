@@ -14,6 +14,16 @@ Node.js 20 or newer and npm must be installed. Local supplies PHP and WP-CLI thr
 
 The installer reads this site's WordPress URL, copies the theme, writes `dev.config.json`, installs build dependencies, builds assets and activates the theme. It adds a project `.gitignore` and root npm scripts. It does not install plugins, create pages or change the site's content, menus, homepage, permalinks or database credentials.
 
+It also creates a brand-new Git repository on `main` and makes the `Initial project setup` commit. This repository has its own history and has no connection to the boilerplate repository.
+
+To push during installation, first create a new empty GitHub repository without a README, licence or `.gitignore`. Pass its URL to the installer:
+
+```sh
+npx https://github.com/InkDigitalDevelopment/boilerplate/archive/refs/heads/main.tar.gz -- --repo https://github.com/InkDigitalDevelopment/client-project.git
+```
+
+The installer adds that URL as `origin` and pushes `main`. Omit `--repo` if you only want the new local Git repository; you can publish it later through GitHub Desktop.
+
 Then run:
 
 ```sh
@@ -39,7 +49,7 @@ Keep block names, ACF keys, PHP identifiers and the theme folder unchanged for n
 
 ## Existing files and reruns
 
-Setup refuses to overwrite an existing `inkwell` theme, root `package.json` or root `.gitignore` on first installation. Use a fresh Local site. It also rejects theme paths that lead outside that site.
+Setup refuses to overwrite an existing `inkwell` theme, root `package.json`, root `.gitignore` or Git repository on first installation. Use a fresh Local site. It also rejects theme paths that lead outside that site.
 
 Setup records progress in `.inkwell-install.json`. If dependency installation or the build fails, fix the reported issue and run the same command again. The copied theme and local settings are retained. A completed installation is a no-op on rerun, so it does not replace later client work.
 

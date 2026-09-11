@@ -4,19 +4,39 @@ import { installSite } from './lib/install.mjs';
 
 const args = process.argv.slice(2);
 if (args.includes('--help') || args.includes('-h')) {
-  console.log('Usage: create-inkwell-site [path/to/app/public] [--dry-run]\nRun from the new site\'s Local Site Shell. No plugins are installed.');
+  console.log('Usage: create-inkwell-site [path/to/app/public] [--repo <empty-github-url>] [--dry-run]\nRun from the new site\'s Local Site Shell. No plugins are installed.');
 } else {
-  const unknown = args.filter(arg => arg.startsWith('-') && arg !== '--dry-run');
-  const targets = args.filter(arg => !arg.startsWith('-'));
+  let dryRun = false;
+  let gitRemote;
+  const targets = [];
+  const unknown = [];
+
+  for (let index = 0; index < args.length; index++) {
+    const arg = args[index];
+    if (arg === '--dry-run') {
+      dryRun = true;
+    } else if (arg === '--repo') {
+      gitRemote = args[++index];
+      if (!gitRemote) unknown.push('--repo requires a URL');
+    } else if (arg.startsWith('--repo=')) {
+      gitRemote = arg.slice('--repo='.length);
+    } else if (arg.startsWith('-')) {
+      unknown.push(arg);
+    } else {
+      targets.push(arg);
+    }
+  }
+
   if (unknown.length || targets.length > 1) {
-    console.error('Use one site path and optionally --dry-run. Run with --help for usage.');
+    console.error('Use one site path, optionally followed by --repo <empty-github-url> and --dry-run. Run with --help for usage.');
     process.exitCode = 1;
   } else {
     try {
       await installSite({
         target: targets[0] || process.cwd(),
         sourceRoot: fileURLToPath(new URL('../', import.meta.url)),
-        dryRun: args.includes('--dry-run'),
+        dryRun,
+        gitRemote,
       });
     } catch (error) {
       console.error(`Setup stopped: ${error.message}`);
