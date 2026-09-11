@@ -1,0 +1,78 @@
+[
+    {
+        "key": "group_inkwell_accordion_faqs",
+        "title": "Block: Accordion / FAQs",
+        "fields": [
+            {
+                "key": "field_inkwell_accordion_faqs_heading",
+                "label": "Heading",
+                "name": "heading",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {"width": "", "class": "", "id": ""},
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_inkwell_accordion_faqs_items",
+                "label": "FAQs",
+                "name": "faqs",
+                "type": "repeater",
+                "instructions": "Add the questions and answers to display.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {"width": "", "class": "", "id": ""},
+                "layout": "block",
+                "pagination": 0,
+                "min": 0,
+                "max": 0,
+                "collapsed": "field_inkwell_accordion_faqs_question",
+                "button_label": "Add FAQ",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_inkwell_accordion_faqs_question",
+                        "label": "Question",
+                        "name": "question",
+                        "type": "text",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {"width": "", "class": "", "id": ""},
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "parent_repeater": "field_inkwell_accordion_faqs_items"
+                    },
+                    {
+                        "key": "field_inkwell_accordion_faqs_answer",
+                        "label": "Answer",
+                        "name": "answer",
+                        "type": "wysiwyg",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {"width": "", "class": "", "id": ""},
+                        "default_value": "",
+                        "tabs": "all",
+                        "toolbar": "basic",
+                        "media_upload": 0,
+                        "delay": 0,
+                        "parent_repeater": "field_inkwell_accordion_faqs_items"
+                    }
+                ]
+            }
+        ],
+        "location": [[{"param": "block", "operator": "==", "value": "inkwell/accordion-faqs"}]],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "Fields for the Accordion / FAQs block.",
+        "show_in_rest": 0
+    }
+]

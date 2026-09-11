@@ -1,0 +1,21 @@
+{
+  "name": "inkwell-theme",
+  "private": true,
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "browser-sync": "^2.29.3",
+    "browser-sync-webpack-plugin": "^2.3.0",    
+    "css-loader": "^6.10.0",
+    "file-loader": "^6.1.0",
+    "mini-css-extract-plugin": "^0.11.2",
+    "postcss-loader": "^7.3.4",
+    "tailwindcss": "^3.4.17",
+    "url-loader": "^4.1.0",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^4.9.2"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch"
+  }
+}

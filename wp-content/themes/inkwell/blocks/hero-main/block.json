@@ -1,0 +1,27 @@
+{
+    "$schema": "https://raw.githubusercontent.com/AdvancedCustomFields/schemas/refs/heads/main/json/block.json",
+    "apiVersion": 3,   
+    "name": "inkwell/hero-main",
+    "title": "Hero Main",
+    "description": "Main page hero component.",
+    "category": "inkwell-components",
+    "icon": "cover-image",
+    "keywords": [
+        "hero",
+        "banner"
+    ],
+    "acf": {
+        "blockVersion": 3,
+        "renderTemplate": "render.php",
+        "hideFieldsInSidebar": true,
+        "expandedEditorButtonText": "Edit Hero Main",
+        "expandedEditorButtons": {
+            "sidebar": false,
+            "toolbar": true
+        }
+    },
+    "supports": {
+        "align": false,
+        "customClassName": false        
+    }
+}

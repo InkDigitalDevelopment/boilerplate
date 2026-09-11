@@ -1,0 +1,104 @@
+[
+    {
+        "key": "group_inkwell_testimonials",
+        "title": "Block: Testimonials",
+        "fields": [
+            {
+                "key": "field_inkwell_testimonials_heading",
+                "label": "Heading",
+                "name": "heading",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {"width": "", "class": "", "id": ""},
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_inkwell_testimonials_items",
+                "label": "Testimonials",
+                "name": "testimonials",
+                "type": "repeater",
+                "instructions": "Add the testimonials to display.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {"width": "", "class": "", "id": ""},
+                "layout": "block",
+                "pagination": 0,
+                "min": 0,
+                "max": 0,
+                "collapsed": "field_inkwell_testimonials_name",
+                "button_label": "Add Testimonial",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_inkwell_testimonials_quote",
+                        "label": "Quote",
+                        "name": "quote",
+                        "type": "textarea",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {"width": "", "class": "", "id": ""},
+                        "default_value": "",
+                        "maxlength": "",
+                        "rows": 4,
+                        "placeholder": "",
+                        "new_lines": "",
+                        "parent_repeater": "field_inkwell_testimonials_items"
+                    },
+                    {
+                        "key": "field_inkwell_testimonials_name",
+                        "label": "Name",
+                        "name": "name",
+                        "type": "text",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {"width": "50", "class": "", "id": ""},
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "parent_repeater": "field_inkwell_testimonials_items"
+                    },
+                    {
+                        "key": "field_inkwell_testimonials_role_company",
+                        "label": "Role / Company",
+                        "name": "role_company",
+                        "type": "text",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {"width": "50", "class": "", "id": ""},
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "parent_repeater": "field_inkwell_testimonials_items"
+                    },
+                    {
+                        "key": "field_inkwell_testimonials_image",
+                        "label": "Image",
+                        "name": "image",
+                        "type": "image",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {"width": "", "class": "", "id": ""},
+                        "return_format": "array",
+                        "library": "all",
+                        "preview_size": "thumbnail",
+                        "parent_repeater": "field_inkwell_testimonials_items"
+                    }
+                ]
+            }
+        ],
+        "location": [[{"param": "block", "operator": "==", "value": "inkwell/testimonials"}]],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "Fields for the Testimonials block.",
+        "show_in_rest": 0
+    }
+]

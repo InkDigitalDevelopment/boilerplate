@@ -1,0 +1,68 @@
+[
+    {
+        "key": "group_inkwell_simple_cta",
+        "title": "Block: Simple CTA",
+        "fields": [
+            {
+                "key": "field_inkwell_simple_cta_heading",
+                "label": "Heading",
+                "name": "heading",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {"width": "", "class": "", "id": ""},
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_inkwell_simple_cta_copy",
+                "label": "Copy",
+                "name": "copy",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {"width": "", "class": "", "id": ""},
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "delay": 0
+            },
+            {
+                "key": "field_inkwell_simple_cta_primary",
+                "label": "Primary CTA",
+                "name": "primary_cta",
+                "type": "link",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {"width": "50", "class": "", "id": ""},
+                "return_format": "array"
+            },
+            {
+                "key": "field_inkwell_simple_cta_secondary",
+                "label": "Secondary CTA",
+                "name": "secondary_cta",
+                "type": "link",
+                "instructions": "Optional secondary call-to-action.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {"width": "50", "class": "", "id": ""},
+                "return_format": "array"
+            }
+        ],
+        "location": [[{"param": "block", "operator": "==", "value": "inkwell/simple-cta"}]],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "Fields for the Simple CTA block.",
+        "show_in_rest": 0
+    }
+]

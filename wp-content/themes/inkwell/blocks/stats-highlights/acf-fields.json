@@ -1,0 +1,77 @@
+[
+    {
+        "key": "group_inkwell_stats_highlights",
+        "title": "Block: Stats / Highlights",
+        "fields": [
+            {
+                "key": "field_inkwell_stats_highlights_heading",
+                "label": "Heading",
+                "name": "heading",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {"width": "", "class": "", "id": ""},
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_inkwell_stats_highlights_stats",
+                "label": "Stats",
+                "name": "stats",
+                "type": "repeater",
+                "instructions": "Add the statistics or highlights to display.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {"width": "", "class": "", "id": ""},
+                "layout": "row",
+                "pagination": 0,
+                "min": 0,
+                "max": 0,
+                "collapsed": "field_inkwell_stats_highlights_label",
+                "button_label": "Add Stat",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_inkwell_stats_highlights_value",
+                        "label": "Value",
+                        "name": "value",
+                        "type": "text",
+                        "instructions": "For example: 98%, 25k or 30+.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {"width": "50", "class": "", "id": ""},
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "parent_repeater": "field_inkwell_stats_highlights_stats"
+                    },
+                    {
+                        "key": "field_inkwell_stats_highlights_label",
+                        "label": "Label",
+                        "name": "label",
+                        "type": "text",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {"width": "50", "class": "", "id": ""},
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "parent_repeater": "field_inkwell_stats_highlights_stats"
+                    }
+                ]
+            }
+        ],
+        "location": [[{"param": "block", "operator": "==", "value": "inkwell/stats-highlights"}]],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "Fields for the Stats / Highlights block.",
+        "show_in_rest": 0
+    }
+]

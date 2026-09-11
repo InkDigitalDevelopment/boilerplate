@@ -1,0 +1,18 @@
+{
+    "$schema": "https://raw.githubusercontent.com/AdvancedCustomFields/schemas/refs/heads/main/json/block.json",
+    "apiVersion": 3,
+    "name": "inkwell/accordion-faqs",
+    "title": "Accordion / FAQs",
+    "description": "An accessible accordion for questions and answers.",
+    "category": "inkwell-components",
+    "icon": "editor-help",
+    "keywords": ["accordion", "faq", "questions"],
+    "acf": {
+        "blockVersion": 3,
+        "renderTemplate": "render.php",
+        "hideFieldsInSidebar": true,
+        "expandedEditorButtonText": "Edit Accordion / FAQs",
+        "expandedEditorButtons": {"sidebar": false, "toolbar": true}
+    },
+    "supports": {"align": false, "customClassName": false}
+}

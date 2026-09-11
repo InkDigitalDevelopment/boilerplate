@@ -1,0 +1,18 @@
+{
+    "$schema": "https://raw.githubusercontent.com/AdvancedCustomFields/schemas/refs/heads/main/json/block.json",
+    "apiVersion": 3,
+    "name": "inkwell/simple-cta",
+    "title": "Simple CTA",
+    "description": "A focused call-to-action with one or two links.",
+    "category": "inkwell-components",
+    "icon": "megaphone",
+    "keywords": ["cta", "call to action", "buttons"],
+    "acf": {
+        "blockVersion": 3,
+        "renderTemplate": "render.php",
+        "hideFieldsInSidebar": true,
+        "expandedEditorButtonText": "Edit Simple CTA",
+        "expandedEditorButtons": {"sidebar": false, "toolbar": true}
+    },
+    "supports": {"align": false, "customClassName": false}
+}

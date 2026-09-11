@@ -1,0 +1,7 @@
+# This machine's Local site URL.
+/dev.config.json
+/node_modules/
+/dist/
+/.env
+/.env.*
+/*.log

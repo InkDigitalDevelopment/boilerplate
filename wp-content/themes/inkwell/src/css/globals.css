@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Project defaults: update these values and the font import above for each build. */
+:root {
+    --brand-primary: #5b2179;
+    --brand-accent: #AE986E;
+    --brand-text: #251E1E;
+    --brand-surface: #e5e1d7;
+    --font-body: "Google Sans", sans-serif;
+    --font-heading: "Poppins", sans-serif;
+
+    /* Compatibility aliases for existing PHP and saved utility classes. */
+    --brand-off-white: var(--brand-surface);
+    --brand-purple: var(--brand-primary);
+    --brand-charcoal: var(--brand-text);
+    --brand-gold: var(--brand-accent);
+    /* Background Colours */
+    --dark-charcoal: #1C1C1E;
+    --light-charcoal: #8A8A8E;
+    --off-white: #F2F2F7;
+    --white: #ffffff;
+    /* Text Colours */
+    --text-purple: #55329F;
+    --text-blue: #3389B4;
+    --text-red: #D73F3F;
+    --text-green: #073033;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: var(--font-body);
+    font-optical-sizing: auto; 
+    overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-optical-sizing: auto;
+}
+h1 {
+    font-size: 65px;
+}
+h2 {
+    font-size: 44px;
+}
+h3 {
+    font-size: 35px;
+}
+h4 {
+    font-size: 28px;
+}
+h5 {
+    font-size: 22px;
+}
+/* Gold Heading Highlight */
+.headingHighlight {
+    color: var(--brand-gold);
+}
+/* Button styles */
+.primary-cta {
+    display: inline-block;
+    width: 100%;
+    padding: 16px 24px;
+    color: white;
+    font-family: var(--font-body);
+    font-size: 22px;
+    background-color: var(--brand-purple);
+    text-align: center;
+    border: 3px solid var(--brand-purple);
+    font-weight: bold;
+}
+.secondary-cta {
+    display: inline-block;
+    width: 100%;
+    padding: 16px 24px;
+    color: var(--brand-purple);
+    font-family: var(--font-body);
+    font-size: 22px;
+    background-color: var(--white);
+    text-align: center;
+    border: 3px solid var(--brand-purple);
+    font-weight: bold;
+}
+/* Gutenberg backend container override */
+.editor-styles-wrapper .is-root-container .wp-block {
+    max-width: none;
+}
+/* Select field styles */
+.select-wrap {
+    position: relative;
+}
+
+.select-wrap select {
+    width: 100%;
+    height: 60px;
+    padding: 0 48px 0 20px; /* right padding gives arrow breathing room */
+    appearance: none;
+    -webkit-appearance: none;
+    background: #fff;
+    border: 1px solid #e3d8c4;
+    color: #b1935c;
+}
+
+.select-wrap::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid #b1935c;
+    border-bottom: 2px solid #b1935c;
+    transform: translateY(-65%) rotate(45deg);
+    pointer-events: none;
+}
+ul.nav-menu {
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* Hero Styles */
+.hero-title {
+    font-size: clamp(34px, 3.35vw, 65px);
+}
+.hero-ctas .primary-cta,
+.hero-ctas .secondary-cta {
+    min-width: 0;
+    padding: clamp(14px, 1.25vw, 16px) clamp(18px, 1.8vw, 24px);
+    font-size: clamp(17px, 1.25vw, 22px);
+    line-height: 1.2;
+    white-space: nowrap;
+}
+.hero-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+.hero-media,
+.hero-image {
+    min-height: 0;
+}
+.hero-usp-item {
+    gap: clamp(12px, 1.4vw, 20px);
+    padding: clamp(14px, 1.5vw, 20px);
+    border-right: 2px solid var(--white);
+}
+.hero-usp-item img {
+    flex: 0 0 auto;
+    width: clamp(34px, 3vw, 48px);
+    height: auto;
+}
+.hero-usp-item h6 {
+    font-size: clamp(20px, 1.65vw, 28px);
+    font-weight: 700;
+    line-height: 1;
+}
+.hero-usp-item p {
+    font-size: clamp(15px, 1.1vw, 18px);
+    line-height: 1.35;
+}
+.hero-usp-item:last-of-type {
+    border-right: none;
+}
+@media (max-width: 1180px) {
+    .hero-title {
+        font-size: clamp(34px, 4.35vw, 48px);
+    }
+}
+@media (max-width: 980px) {
+    .hero-image img {
+        height: auto;
+        min-height: 0;
+        aspect-ratio: 1.08 / 1;
+    }
+    .hero-usp-item {
+        border-right: none;
+        border-bottom: 2px solid var(--white);
+    }
+    .hero-usp-item:last-of-type {
+        border-bottom: none;
+    }
+}
+@media (max-width: 680px) {
+    .hero-title {
+        font-size: clamp(34px, 12vw, 46px);
+    }
+    .hero-ctas .primary-cta,
+    .hero-ctas .secondary-cta {
+        white-space: normal;
+    }
+}
+/* Form overrides */
+.contact-content .contact-content-inner form input,
+.contact-content .contact-content-inner form textarea {
+    padding: 12px;
+}
+.contact-content .contact-content-inner form .forminator-button-submit {
+    background-color: var(--brand-primary);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 4px;
+}
+.contact-content .contact-content-inner form .forminator-error-message {
+    padding: 10px !important;
+}
+/* Blog pagination */
+.blog .blog-pagination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 16px;
+}
+.blog .blog-pagination span {
+    padding: 2px 10px;
+    border: 1px solid #ccc;
+    margin-right: 8px;
+    font-size: 14px;
+}
+.blog .blog-pagination span:last-of-type {
+    margin-right: 0;
+    margin-left: 8px;
+}
+.blog .blog-pagination span:first-of-type {
+    margin-right: 8px;
+}
+.blog .blog-pagination a {
+    padding: 2px 10px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    margin-right: 8px;
+    font-size: 14px;
+}
+.blog .blog-pagination a:last-of-type {
+    margin-right: 0;
+}

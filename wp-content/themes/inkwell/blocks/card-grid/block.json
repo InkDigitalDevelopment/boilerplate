@@ -1,0 +1,18 @@
+{
+    "$schema": "https://raw.githubusercontent.com/AdvancedCustomFields/schemas/refs/heads/main/json/block.json",
+    "apiVersion": 3,
+    "name": "inkwell/card-grid",
+    "title": "Card Grid",
+    "description": "A responsive grid of linked content cards.",
+    "category": "inkwell-components",
+    "icon": "grid-view",
+    "keywords": ["cards", "grid", "features"],
+    "acf": {
+        "blockVersion": 3,
+        "renderTemplate": "render.php",
+        "hideFieldsInSidebar": true,
+        "expandedEditorButtonText": "Edit Card Grid",
+        "expandedEditorButtons": {"sidebar": false, "toolbar": true}
+    },
+    "supports": {"align": false, "customClassName": false}
+}

@@ -1,0 +1,18 @@
+{
+    "$schema": "https://raw.githubusercontent.com/AdvancedCustomFields/schemas/refs/heads/main/json/block.json",
+    "apiVersion": 3,
+    "name": "inkwell/stats-highlights",
+    "title": "Stats / Highlights",
+    "description": "A set of key statistics or highlights.",
+    "category": "inkwell-components",
+    "icon": "chart-bar",
+    "keywords": ["stats", "numbers", "highlights"],
+    "acf": {
+        "blockVersion": 3,
+        "renderTemplate": "render.php",
+        "hideFieldsInSidebar": true,
+        "expandedEditorButtonText": "Edit Stats / Highlights",
+        "expandedEditorButtons": {"sidebar": false, "toolbar": true}
+    },
+    "supports": {"align": false, "customClassName": false}
+}

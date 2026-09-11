@@ -1,0 +1,117 @@
+[
+    {
+        "key": "group_inkwell_card_grid",
+        "title": "Block: Card Grid",
+        "fields": [
+            {
+                "key": "field_inkwell_card_grid_section_heading",
+                "label": "Section Heading",
+                "name": "section_heading",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {"width": "", "class": "", "id": ""},
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_inkwell_card_grid_section_intro",
+                "label": "Section Intro",
+                "name": "section_intro",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {"width": "", "class": "", "id": ""},
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "delay": 0
+            },
+            {
+                "key": "field_inkwell_card_grid_cards",
+                "label": "Cards",
+                "name": "cards",
+                "type": "repeater",
+                "instructions": "Add the cards to display in the grid.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {"width": "", "class": "", "id": ""},
+                "layout": "block",
+                "pagination": 0,
+                "min": 0,
+                "max": 0,
+                "collapsed": "field_inkwell_card_grid_card_heading",
+                "button_label": "Add Card",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_inkwell_card_grid_card_heading",
+                        "label": "Card Heading",
+                        "name": "card_heading",
+                        "type": "text",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {"width": "", "class": "", "id": ""},
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "parent_repeater": "field_inkwell_card_grid_cards"
+                    },
+                    {
+                        "key": "field_inkwell_card_grid_card_copy",
+                        "label": "Card Copy",
+                        "name": "card_copy",
+                        "type": "wysiwyg",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {"width": "", "class": "", "id": ""},
+                        "default_value": "",
+                        "tabs": "all",
+                        "toolbar": "basic",
+                        "media_upload": 0,
+                        "delay": 0,
+                        "parent_repeater": "field_inkwell_card_grid_cards"
+                    },
+                    {
+                        "key": "field_inkwell_card_grid_image_icon",
+                        "label": "Image / Icon",
+                        "name": "image_icon",
+                        "type": "image",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {"width": "50", "class": "", "id": ""},
+                        "return_format": "array",
+                        "library": "all",
+                        "preview_size": "medium",
+                        "parent_repeater": "field_inkwell_card_grid_cards"
+                    },
+                    {
+                        "key": "field_inkwell_card_grid_link",
+                        "label": "Link",
+                        "name": "link",
+                        "type": "link",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {"width": "50", "class": "", "id": ""},
+                        "return_format": "array",
+                        "parent_repeater": "field_inkwell_card_grid_cards"
+                    }
+                ]
+            }
+        ],
+        "location": [[{"param": "block", "operator": "==", "value": "inkwell/card-grid"}]],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "Fields for the Card Grid block.",
+        "show_in_rest": 0
+    }
+]
