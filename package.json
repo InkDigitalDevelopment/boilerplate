@@ -1,8 +1,7 @@
 {
-  "name": "@inkdigital/boilerplate",
-  "version": "1.1.0",
+  "name": "create-inkwell-site",
+  "version": "1.0.0",
   "description": "Install the Inkwell PHP, ACF and Tailwind starter into a WordPress Local site.",
-  "private": true,
   "type": "module",
   "bin": {
     "create-inkwell-site": "scripts/create-site.mjs"
@@ -16,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/InkDigitalDevelopment/boilerplate.git"
+    "url": "git+https://github.com/InkDigitalDevelopment/boilerplate.git"
   },
   "scripts": {
     "setup": "node scripts/create-site.mjs",

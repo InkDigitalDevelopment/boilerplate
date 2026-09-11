@@ -7,22 +7,18 @@ Inkwell PHP layouts, reusable ACF component blocks and Tailwind CSS, for WordPre
 Start the site in Local, open its **Site Shell**, and run this from `app/public`:
 
 ```sh
-npx https://github.com/InkDigitalDevelopment/boilerplate/archive/refs/heads/main.tar.gz
+npx create-inkwell-site
 ```
 
-Node.js 20 or newer and npm must be installed. Local supplies PHP and WP-CLI through its Site Shell. The archive URL means a separate Git installation or npm registry account is not required to run setup.
+Node.js 20 or newer and npm must be installed. Local supplies PHP and WP-CLI through its Site Shell. Git or GitHub Desktop must also be installed.
 
 The installer reads this site's WordPress URL, copies the theme, writes `dev.config.json`, installs build dependencies, builds assets and activates the theme. It adds a project `.gitignore` and root npm scripts. It does not install plugins, create pages or change the site's content, menus, homepage, permalinks or database credentials.
 
-It also creates a brand-new Git repository on `main` and makes the `Initial project setup` commit. This repository has its own history and has no connection to the boilerplate repository.
+It also creates a brand-new Git repository on `main` and makes the `Initial project setup` commit. This repository has its own history and has no connection to the boilerplate repository. During setup, it asks for the optional GitHub repository URL; press Enter to keep the repository local.
 
-To push during installation, first create a new empty GitHub repository without a README, licence or `.gitignore`. Pass its URL to the installer:
+To push during installation, first create a new empty GitHub repository without a README, licence or `.gitignore`, then enter its URL when prompted.
 
-```sh
-npx https://github.com/InkDigitalDevelopment/boilerplate/archive/refs/heads/main.tar.gz -- --repo https://github.com/InkDigitalDevelopment/client-project.git
-```
-
-The installer adds that URL as `origin` and pushes `main`. Omit `--repo` if you only want the new local Git repository; you can publish it later through GitHub Desktop.
+The installer adds the supplied URL as `origin` and pushes `main`. Leave it blank if you only want the new local Git repository; you can publish it later through GitHub Desktop. The non-interactive form remains available as `npx create-inkwell-site -- --repo https://github.com/InkDigitalDevelopment/client-project.git`.
 
 Then run:
 

@@ -1,6 +1,18 @@
 #!/usr/bin/env node
+import { createInterface } from 'node:readline/promises';
 import { fileURLToPath } from 'node:url';
 import { installSite } from './lib/install.mjs';
+
+async function askForGitRemote() {
+  if (!process.stdin.isTTY || !process.stdout.isTTY) return;
+  const prompt = createInterface({ input: process.stdin, output: process.stdout });
+  try {
+    const answer = await prompt.question('Empty GitHub repository URL (press Enter to keep Git local): ');
+    return answer.trim() || undefined;
+  } finally {
+    prompt.close();
+  }
+}
 
 const args = process.argv.slice(2);
 if (args.includes('--help') || args.includes('-h')) {
@@ -32,6 +44,7 @@ if (args.includes('--help') || args.includes('-h')) {
     process.exitCode = 1;
   } else {
     try {
+      if (!gitRemote && !dryRun) gitRemote = await askForGitRemote();
       await installSite({
         target: targets[0] || process.cwd(),
         sourceRoot: fileURLToPath(new URL('../', import.meta.url)),
