@@ -113,6 +113,28 @@ test('a failed build resumes without replacing local settings or source edits', 
   assert.equal(JSON.parse(fs.readFileSync(path.join(options.target, 'wp-content/themes/inkwell/dev.config.json'))).localUrl, 'http://changed.local');
 });
 
+test('an out-of-sync dependency lock is repaired and installation continues', async t => {
+  const options = fixture(t);
+  let cleanInstallAttempts = 0;
+  const run = (tool, args, config) => {
+    if (tool.command === 'npm' && args[0] === 'ci' && cleanInstallAttempts++ === 0) {
+      throw new Error('package and lock file are out of sync');
+    }
+    return options.run(tool, args, config);
+  };
+
+  await installSite({ ...options, run });
+
+  assert.deepEqual(
+    options.calls.filter(call => call.tool === 'npm').map(call => call.args),
+    [
+      ['install', '--package-lock-only', '--ignore-scripts', '--no-audit', '--no-fund'],
+      ['ci', '--no-audit', '--no-fund'],
+      ['run', 'build'],
+    ],
+  );
+});
+
 test('database failures leave the destination unchanged', async t => {
   const options = fixture(t);
   await assert.rejects(installSite({ ...options, run: () => { throw new Error('database unavailable'); } }), /database unavailable/);

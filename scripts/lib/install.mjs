@@ -230,7 +230,13 @@ export async function installSite({ target, sourceRoot, dryRun = false, gitRemot
     scripts: { dev: 'npm --prefix wp-content/themes/inkwell run dev', build: 'npm --prefix wp-content/themes/inkwell run build' },
   }, null, 2) + '\n');
   log('Installing theme build dependencies...');
-  run(tools.npm, ['ci', '--no-audit', '--no-fund'], { cwd: themeTarget });
+  try {
+    run(tools.npm, ['ci', '--no-audit', '--no-fund'], { cwd: themeTarget, quiet: true });
+  } catch {
+    log('Refreshing the dependency lock file...');
+    run(tools.npm, ['install', '--package-lock-only', '--ignore-scripts', '--no-audit', '--no-fund'], { cwd: themeTarget });
+    run(tools.npm, ['ci', '--no-audit', '--no-fund'], { cwd: themeTarget });
+  }
   log('Building theme assets...');
   run(tools.npm, ['run', 'build'], { cwd: themeTarget });
   wp(['theme', 'activate', 'inkwell'], false);
