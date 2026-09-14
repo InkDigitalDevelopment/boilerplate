@@ -1,0 +1,230 @@
+[
+  {
+    "key": "group_inkwell_steps_with_media",
+    "title": "Block: Steps With Media",
+    "fields": [
+      {
+        "key": "field_inkwell_steps_with_media_eyebrow",
+        "label": "Eyebrow",
+        "name": "steps_with_media_eyebrow",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_steps_with_media_title",
+        "label": "Heading",
+        "name": "steps_with_media_title",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_steps_with_media_intro",
+        "label": "Introduction",
+        "name": "steps_with_media_intro",
+        "type": "textarea",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "rows": 4,
+        "new_lines": "br"
+      },
+      {
+        "key": "field_inkwell_steps_with_media_steps",
+        "label": "Steps",
+        "name": "steps_with_media_steps",
+        "type": "repeater",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "layout": "block",
+        "pagination": 0,
+        "min": 3,
+        "max": 5,
+        "collapsed": "field_inkwell_steps_with_media_step_image",
+        "button_label": "Add Step",
+        "rows_per_page": 20,
+        "sub_fields": [
+          {
+            "key": "field_inkwell_steps_with_media_step_image",
+            "label": "Image",
+            "name": "steps_with_media_step_image",
+            "type": "image",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "preview_size": "medium"
+          },
+          {
+            "key": "field_inkwell_steps_with_media_step_title",
+            "label": "Heading",
+            "name": "steps_with_media_step_title",
+            "type": "text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": ""
+          },
+          {
+            "key": "field_inkwell_steps_with_media_step_copy",
+            "label": "Copy",
+            "name": "steps_with_media_step_copy",
+            "type": "textarea",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "rows": 4,
+            "new_lines": "br"
+          }
+        ]
+      },
+      {
+        "key": "field_inkwell_steps_with_media_section_settings",
+        "label": "Section Settings",
+        "name": "steps_with_media_section_settings",
+        "type": "group",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "layout": "block",
+        "sub_fields": [
+          {
+            "key": "field_inkwell_steps_with_media_background",
+            "label": "Background",
+            "name": "steps_with_media_background",
+            "type": "select",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "choices": {
+              "white": "White",
+              "light": "Light grey",
+              "navy": "Navy"
+            },
+            "default_value": "white",
+            "return_format": "value",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0
+          },
+          {
+            "key": "field_inkwell_steps_with_media_padding",
+            "label": "Vertical Spacing",
+            "name": "steps_with_media_padding",
+            "type": "select",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "choices": {
+              "none": "None",
+              "small": "Small",
+              "medium": "Medium",
+              "large": "Large"
+            },
+            "default_value": "medium",
+            "return_format": "value",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0
+          },
+          {
+            "key": "field_inkwell_steps_with_media_width",
+            "label": "Container Width",
+            "name": "steps_with_media_width",
+            "type": "select",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "choices": {
+              "content": "Content",
+              "standard": "Standard",
+              "wide": "Wide"
+            },
+            "default_value": "standard",
+            "return_format": "value",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0
+          }
+        ]
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "inkwell/steps-with-media"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Fields for the Steps With Media block.",
+    "show_in_rest": 0
+  }
+]

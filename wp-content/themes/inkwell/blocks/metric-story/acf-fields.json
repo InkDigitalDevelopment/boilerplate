@@ -1,0 +1,318 @@
+[
+  {
+    "key": "group_inkwell_metric_story",
+    "title": "Block: Metric Story",
+    "fields": [
+      {
+        "key": "field_inkwell_metric_story_eyebrow",
+        "label": "Eyebrow",
+        "name": "metric_story_eyebrow",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_metric_story_title",
+        "label": "Heading",
+        "name": "metric_story_title",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_metric_story_content",
+        "label": "Content",
+        "name": "metric_story_content",
+        "type": "wysiwyg",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 0,
+        "delay": 0
+      },
+      {
+        "key": "field_inkwell_metric_story_cta",
+        "label": "CTA",
+        "name": "metric_story_cta",
+        "type": "link",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "return_format": "array"
+      },
+      {
+        "key": "field_inkwell_metric_story_primary_value",
+        "label": "Primary Metric Value",
+        "name": "metric_story_primary_value",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_metric_story_primary_label",
+        "label": "Primary Metric Label",
+        "name": "metric_story_primary_label",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_metric_story_primary_icon",
+        "label": "Primary Metric Icon",
+        "name": "metric_story_primary_icon",
+        "type": "select",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "choices": {
+          "strategy": "Strategy",
+          "layers": "Layers / design",
+          "code": "Code / development",
+          "support": "Support",
+          "lightbulb": "Lightbulb",
+          "pencil": "Pencil",
+          "check": "Check",
+          "arrow": "Arrow"
+        },
+        "default_value": "strategy",
+        "return_format": "value",
+        "allow_null": 0,
+        "multiple": 0,
+        "ui": 0
+      },
+      {
+        "key": "field_inkwell_metric_story_supporting_metrics",
+        "label": "Supporting Metrics",
+        "name": "metric_story_supporting_metrics",
+        "type": "repeater",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "layout": "block",
+        "pagination": 0,
+        "min": 2,
+        "max": 3,
+        "collapsed": "field_inkwell_metric_story_metric_value",
+        "button_label": "Add Supporting Metric",
+        "rows_per_page": 20,
+        "sub_fields": [
+          {
+            "key": "field_inkwell_metric_story_metric_value",
+            "label": "Value",
+            "name": "metric_story_metric_value",
+            "type": "text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": ""
+          },
+          {
+            "key": "field_inkwell_metric_story_metric_label",
+            "label": "Label",
+            "name": "metric_story_metric_label",
+            "type": "text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": ""
+          },
+          {
+            "key": "field_inkwell_metric_story_metric_icon",
+            "label": "Icon",
+            "name": "metric_story_metric_icon",
+            "type": "select",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "choices": {
+              "strategy": "Strategy",
+              "layers": "Layers / design",
+              "code": "Code / development",
+              "support": "Support",
+              "lightbulb": "Lightbulb",
+              "pencil": "Pencil",
+              "check": "Check",
+              "arrow": "Arrow"
+            },
+            "default_value": "strategy",
+            "return_format": "value",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0
+          }
+        ]
+      },
+      {
+        "key": "field_inkwell_metric_story_section_settings",
+        "label": "Section Settings",
+        "name": "metric_story_section_settings",
+        "type": "group",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "layout": "block",
+        "sub_fields": [
+          {
+            "key": "field_inkwell_metric_story_background",
+            "label": "Background",
+            "name": "metric_story_background",
+            "type": "select",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "choices": {
+              "white": "White",
+              "light": "Light grey",
+              "navy": "Navy"
+            },
+            "default_value": "white",
+            "return_format": "value",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0
+          },
+          {
+            "key": "field_inkwell_metric_story_padding",
+            "label": "Vertical Spacing",
+            "name": "metric_story_padding",
+            "type": "select",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "choices": {
+              "none": "None",
+              "small": "Small",
+              "medium": "Medium",
+              "large": "Large"
+            },
+            "default_value": "medium",
+            "return_format": "value",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0
+          },
+          {
+            "key": "field_inkwell_metric_story_width",
+            "label": "Container Width",
+            "name": "metric_story_width",
+            "type": "select",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "choices": {
+              "content": "Content",
+              "standard": "Standard",
+              "wide": "Wide"
+            },
+            "default_value": "standard",
+            "return_format": "value",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0
+          }
+        ]
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "inkwell/metric-story"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Fields for the Metric Story block.",
+    "show_in_rest": 0
+  }
+]

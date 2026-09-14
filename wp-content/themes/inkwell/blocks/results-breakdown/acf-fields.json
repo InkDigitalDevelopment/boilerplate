@@ -1,0 +1,311 @@
+[
+  {
+    "key": "group_inkwell_results_breakdown",
+    "title": "Block: Results Breakdown",
+    "fields": [
+      {
+        "key": "field_inkwell_results_breakdown_eyebrow",
+        "label": "Eyebrow",
+        "name": "results_breakdown_eyebrow",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_results_breakdown_title",
+        "label": "Heading",
+        "name": "results_breakdown_title",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_results_breakdown_intro",
+        "label": "Introduction",
+        "name": "results_breakdown_intro",
+        "type": "textarea",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "rows": 4,
+        "new_lines": "br"
+      },
+      {
+        "key": "field_inkwell_results_breakdown_results",
+        "label": "Results",
+        "name": "results_breakdown_results",
+        "type": "repeater",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "layout": "block",
+        "pagination": 0,
+        "min": 1,
+        "max": 6,
+        "collapsed": "field_inkwell_results_breakdown_result_label",
+        "button_label": "Add Result",
+        "rows_per_page": 20,
+        "sub_fields": [
+          {
+            "key": "field_inkwell_results_breakdown_result_label",
+            "label": "Label",
+            "name": "results_breakdown_result_label",
+            "type": "text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": ""
+          },
+          {
+            "key": "field_inkwell_results_breakdown_result_value",
+            "label": "Displayed Value",
+            "name": "results_breakdown_result_value",
+            "type": "text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": ""
+          },
+          {
+            "key": "field_inkwell_results_breakdown_bar_percentage",
+            "label": "Bar Width (%)",
+            "name": "results_breakdown_bar_percentage",
+            "type": "number",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": 50,
+            "step": 1,
+            "min": 0,
+            "max": 100
+          }
+        ]
+      },
+      {
+        "key": "field_inkwell_results_breakdown_testimonial",
+        "label": "Testimonial",
+        "name": "results_breakdown_testimonial",
+        "type": "group",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "layout": "block",
+        "sub_fields": [
+          {
+            "key": "field_inkwell_results_breakdown_quote",
+            "label": "Quote",
+            "name": "results_breakdown_quote",
+            "type": "textarea",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "rows": 4,
+            "new_lines": "br"
+          },
+          {
+            "key": "field_inkwell_results_breakdown_person",
+            "label": "Person",
+            "name": "results_breakdown_person",
+            "type": "text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": ""
+          },
+          {
+            "key": "field_inkwell_results_breakdown_role",
+            "label": "Role / Company",
+            "name": "results_breakdown_role",
+            "type": "text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": ""
+          },
+          {
+            "key": "field_inkwell_results_breakdown_photo",
+            "label": "Photo",
+            "name": "results_breakdown_photo",
+            "type": "image",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "preview_size": "medium"
+          }
+        ]
+      },
+      {
+        "key": "field_inkwell_results_breakdown_section_settings",
+        "label": "Section Settings",
+        "name": "results_breakdown_section_settings",
+        "type": "group",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "layout": "block",
+        "sub_fields": [
+          {
+            "key": "field_inkwell_results_breakdown_background",
+            "label": "Background",
+            "name": "results_breakdown_background",
+            "type": "select",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "choices": {
+              "white": "White",
+              "light": "Light grey",
+              "navy": "Navy"
+            },
+            "default_value": "white",
+            "return_format": "value",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0
+          },
+          {
+            "key": "field_inkwell_results_breakdown_padding",
+            "label": "Vertical Spacing",
+            "name": "results_breakdown_padding",
+            "type": "select",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "choices": {
+              "none": "None",
+              "small": "Small",
+              "medium": "Medium",
+              "large": "Large"
+            },
+            "default_value": "medium",
+            "return_format": "value",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0
+          },
+          {
+            "key": "field_inkwell_results_breakdown_width",
+            "label": "Container Width",
+            "name": "results_breakdown_width",
+            "type": "select",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "choices": {
+              "content": "Content",
+              "standard": "Standard",
+              "wide": "Wide"
+            },
+            "default_value": "standard",
+            "return_format": "value",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0
+          }
+        ]
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "inkwell/results-breakdown"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Fields for the Results Breakdown block.",
+    "show_in_rest": 0
+  }
+]

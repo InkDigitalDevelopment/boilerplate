@@ -1,0 +1,207 @@
+[
+  {
+    "key": "group_inkwell_video_testimonial",
+    "title": "Block: Video Testimonial",
+    "fields": [
+      {
+        "key": "field_inkwell_video_testimonial_video_url",
+        "label": "YouTube or Vimeo URL",
+        "name": "video_testimonial_video_url",
+        "type": "url",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_video_testimonial_poster",
+        "label": "Poster Image",
+        "name": "video_testimonial_poster",
+        "type": "image",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "return_format": "array",
+        "library": "all",
+        "preview_size": "medium"
+      },
+      {
+        "key": "field_inkwell_video_testimonial_quote",
+        "label": "Quote",
+        "name": "video_testimonial_quote",
+        "type": "textarea",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "rows": 4,
+        "new_lines": "br"
+      },
+      {
+        "key": "field_inkwell_video_testimonial_name",
+        "label": "Name",
+        "name": "video_testimonial_name",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_video_testimonial_role",
+        "label": "Role / Company",
+        "name": "video_testimonial_role",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_video_testimonial_headshot",
+        "label": "Headshot",
+        "name": "video_testimonial_headshot",
+        "type": "image",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "return_format": "array",
+        "library": "all",
+        "preview_size": "medium"
+      },
+      {
+        "key": "field_inkwell_video_testimonial_section_settings",
+        "label": "Section Settings",
+        "name": "video_testimonial_section_settings",
+        "type": "group",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "layout": "block",
+        "sub_fields": [
+          {
+            "key": "field_inkwell_video_testimonial_background",
+            "label": "Background",
+            "name": "video_testimonial_background",
+            "type": "select",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "choices": {
+              "white": "White",
+              "light": "Light grey",
+              "navy": "Navy"
+            },
+            "default_value": "white",
+            "return_format": "value",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0
+          },
+          {
+            "key": "field_inkwell_video_testimonial_padding",
+            "label": "Vertical Spacing",
+            "name": "video_testimonial_padding",
+            "type": "select",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "choices": {
+              "none": "None",
+              "small": "Small",
+              "medium": "Medium",
+              "large": "Large"
+            },
+            "default_value": "medium",
+            "return_format": "value",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0
+          },
+          {
+            "key": "field_inkwell_video_testimonial_width",
+            "label": "Container Width",
+            "name": "video_testimonial_width",
+            "type": "select",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "choices": {
+              "content": "Content",
+              "standard": "Standard",
+              "wide": "Wide"
+            },
+            "default_value": "standard",
+            "return_format": "value",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0
+          }
+        ]
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "inkwell/video-testimonial"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Fields for the Video Testimonial block.",
+    "show_in_rest": 0
+  }
+]

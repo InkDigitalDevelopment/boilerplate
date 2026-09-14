@@ -1,0 +1,29 @@
+{
+  "$schema": "https://raw.githubusercontent.com/AdvancedCustomFields/schemas/refs/heads/main/json/block.json",
+  "apiVersion": 3,
+  "name": "inkwell/sticky-anchor-sidebar",
+  "title": "Sticky Anchor Sidebar",
+  "description": "Page-level sticky anchor navigation beside introductory content.",
+  "category": "inkwell-components",
+  "icon": "menu-alt3",
+  "keywords": [
+    "sticky",
+    "anchor",
+    "sidebar"
+  ],
+  "acf": {
+    "blockVersion": 3,
+    "renderTemplate": "render.php",
+    "hideFieldsInSidebar": true,
+    "expandedEditorButtonText": "Edit Sticky Anchor Sidebar",
+    "expandedEditorButtons": {
+      "sidebar": false,
+      "toolbar": true
+    }
+  },
+  "supports": {
+    "align": false,
+    "anchor": true,
+    "customClassName": false
+  }
+}

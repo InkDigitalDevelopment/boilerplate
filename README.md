@@ -32,6 +32,8 @@ ACF Pro is installed separately when you want to use the component blocks. The t
 
 The theme includes 12 design-library components matching the supplied reference: Hero Split, Logo Strip, Icon Grid, Process Steps, Team Grid, Featured Case Study, Latest Posts, Form + Content, Anchor Navigation, Content Columns, Full Width Media and Quote. Every component has its own importable `acf-fields.json` file alongside its `block.json` and PHP renderer.
 
+A second 12-component set adds Sticky Side Content, Image Hotspots, Before / After Slider, Metric Story, Feature Showcase, Product / Service Selector, Downloads / Resource Hub, Results Breakdown, Video Testimonial, Sticky Anchor Sidebar, Steps With Media and Pricing Comparison Matrix. Interactive behaviour is lightweight, local to the theme and progressively enhanced.
+
 ## Files to change for each project
 
 All theme paths are under `wp-content/themes/inkwell/`.

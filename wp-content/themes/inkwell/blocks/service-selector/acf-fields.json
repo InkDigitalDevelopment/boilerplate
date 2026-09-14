@@ -1,0 +1,256 @@
+[
+  {
+    "key": "group_inkwell_service_selector",
+    "title": "Block: Product / Service Selector",
+    "fields": [
+      {
+        "key": "field_inkwell_service_selector_eyebrow",
+        "label": "Eyebrow",
+        "name": "service_selector_eyebrow",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_service_selector_title",
+        "label": "Heading",
+        "name": "service_selector_title",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_service_selector_intro",
+        "label": "Introduction",
+        "name": "service_selector_intro",
+        "type": "textarea",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "rows": 4,
+        "new_lines": "br"
+      },
+      {
+        "key": "field_inkwell_service_selector_items",
+        "label": "Items",
+        "name": "service_selector_items",
+        "type": "repeater",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "layout": "block",
+        "pagination": 0,
+        "min": 3,
+        "max": 5,
+        "collapsed": "field_inkwell_service_selector_item_icon",
+        "button_label": "Add Item",
+        "rows_per_page": 20,
+        "sub_fields": [
+          {
+            "key": "field_inkwell_service_selector_item_icon",
+            "label": "Icon",
+            "name": "service_selector_item_icon",
+            "type": "select",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "choices": {
+              "strategy": "Strategy",
+              "layers": "Layers / design",
+              "code": "Code / development",
+              "support": "Support",
+              "lightbulb": "Lightbulb",
+              "pencil": "Pencil",
+              "check": "Check",
+              "arrow": "Arrow"
+            },
+            "default_value": "strategy",
+            "return_format": "value",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0
+          },
+          {
+            "key": "field_inkwell_service_selector_item_title",
+            "label": "Heading",
+            "name": "service_selector_item_title",
+            "type": "text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": ""
+          },
+          {
+            "key": "field_inkwell_service_selector_item_description",
+            "label": "Description",
+            "name": "service_selector_item_description",
+            "type": "textarea",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "rows": 4,
+            "new_lines": "br"
+          },
+          {
+            "key": "field_inkwell_service_selector_item_link",
+            "label": "Link",
+            "name": "service_selector_item_link",
+            "type": "link",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "return_format": "array"
+          }
+        ]
+      },
+      {
+        "key": "field_inkwell_service_selector_section_settings",
+        "label": "Section Settings",
+        "name": "service_selector_section_settings",
+        "type": "group",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "layout": "block",
+        "sub_fields": [
+          {
+            "key": "field_inkwell_service_selector_background",
+            "label": "Background",
+            "name": "service_selector_background",
+            "type": "select",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "choices": {
+              "white": "White",
+              "light": "Light grey",
+              "navy": "Navy"
+            },
+            "default_value": "white",
+            "return_format": "value",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0
+          },
+          {
+            "key": "field_inkwell_service_selector_padding",
+            "label": "Vertical Spacing",
+            "name": "service_selector_padding",
+            "type": "select",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "choices": {
+              "none": "None",
+              "small": "Small",
+              "medium": "Medium",
+              "large": "Large"
+            },
+            "default_value": "medium",
+            "return_format": "value",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0
+          },
+          {
+            "key": "field_inkwell_service_selector_width",
+            "label": "Container Width",
+            "name": "service_selector_width",
+            "type": "select",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "choices": {
+              "content": "Content",
+              "standard": "Standard",
+              "wide": "Wide"
+            },
+            "default_value": "standard",
+            "return_format": "value",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0
+          }
+        ]
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "inkwell/service-selector"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Fields for the Product / Service Selector block.",
+    "show_in_rest": 0
+  }
+]

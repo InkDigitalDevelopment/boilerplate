@@ -75,3 +75,63 @@ function inkwell_component_icon($name, $classes = 'h-9 w-9') {
         $body
     );
 }
+
+function inkwell_component_section_classes($settings, $prefix) {
+    $settings = is_array($settings) ? $settings : [];
+    $backgrounds = [
+        'white' => 'bg-white text-[#09152f]',
+        'light' => 'bg-[#f6f8fb] text-[#09152f]',
+        'navy' => 'bg-[#101d2e] text-white',
+    ];
+    $spacing = [
+        'none' => 'py-0',
+        'small' => 'py-10 lg:py-14',
+        'medium' => 'py-16 lg:py-24',
+        'large' => 'py-20 lg:py-32',
+    ];
+    $background = $settings[$prefix . '_background'] ?? 'white';
+    $padding = $settings[$prefix . '_padding'] ?? 'medium';
+
+    return ($backgrounds[$background] ?? $backgrounds['white']) . ' ' . ($spacing[$padding] ?? $spacing['medium']);
+}
+
+function inkwell_component_container_class($settings, $prefix) {
+    $settings = is_array($settings) ? $settings : [];
+    $widths = [
+        'content' => 'max-w-5xl',
+        'standard' => 'max-w-7xl',
+        'wide' => 'max-w-[1440px]',
+    ];
+    $width = $settings[$prefix . '_width'] ?? 'standard';
+
+    return $widths[$width] ?? $widths['standard'];
+}
+
+function inkwell_component_video_embed_url($url) {
+    $url = trim((string) $url);
+    if (!$url) {
+        return '';
+    }
+
+    $parts = wp_parse_url($url);
+    $host = strtolower($parts['host'] ?? '');
+    $path = trim($parts['path'] ?? '', '/');
+
+    if ($host === 'youtu.be' && $path) {
+        return 'https://www.youtube-nocookie.com/embed/' . rawurlencode(explode('/', $path)[0]);
+    }
+    if (str_contains($host, 'youtube.com')) {
+        parse_str($parts['query'] ?? '', $query);
+        if (!empty($query['v'])) {
+            return 'https://www.youtube-nocookie.com/embed/' . rawurlencode($query['v']);
+        }
+        if (preg_match('~(?:embed|shorts)/([^/]+)~', $path, $matches)) {
+            return 'https://www.youtube-nocookie.com/embed/' . rawurlencode($matches[1]);
+        }
+    }
+    if (str_contains($host, 'vimeo.com') && preg_match('~(?:video/)?([0-9]+)~', $path, $matches)) {
+        return 'https://player.vimeo.com/video/' . rawurlencode($matches[1]);
+    }
+
+    return '';
+}

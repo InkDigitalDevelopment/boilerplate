@@ -257,6 +257,17 @@ ul.nav-menu {
     cursor: pointer;
     font-weight: 600;
 }
+.comparison-before {
+    clip-path: inset(0 calc(100% - var(--comparison-position)) 0 0);
+}
+.comparison-divider {
+    left: var(--comparison-position);
+}
+.comparison-control:focus-visible {
+    opacity: 1;
+    outline: 3px solid #0867f2;
+    outline-offset: -3px;
+}
 /* Blog pagination */
 .blog .blog-pagination {
     display: flex;

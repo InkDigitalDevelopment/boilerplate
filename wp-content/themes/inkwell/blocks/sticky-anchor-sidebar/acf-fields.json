@@ -1,0 +1,263 @@
+[
+  {
+    "key": "group_inkwell_sticky_anchor_sidebar",
+    "title": "Block: Sticky Anchor Sidebar",
+    "fields": [
+      {
+        "key": "field_inkwell_sticky_anchor_sidebar_sidebar_title",
+        "label": "Sidebar Title",
+        "name": "sticky_anchor_sidebar_sidebar_title",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_sticky_anchor_sidebar_anchors",
+        "label": "Anchor Links",
+        "name": "sticky_anchor_sidebar_anchors",
+        "type": "repeater",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "layout": "block",
+        "pagination": 0,
+        "min": 2,
+        "max": 8,
+        "collapsed": "field_inkwell_sticky_anchor_sidebar_anchor_label",
+        "button_label": "Add Anchor Link",
+        "rows_per_page": 20,
+        "sub_fields": [
+          {
+            "key": "field_inkwell_sticky_anchor_sidebar_anchor_label",
+            "label": "Label",
+            "name": "sticky_anchor_sidebar_anchor_label",
+            "type": "text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": ""
+          },
+          {
+            "key": "field_inkwell_sticky_anchor_sidebar_anchor_target",
+            "label": "Anchor",
+            "name": "sticky_anchor_sidebar_anchor_target",
+            "type": "text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "instructions": "Enter the target section anchor without the # symbol."
+          }
+        ]
+      },
+      {
+        "key": "field_inkwell_sticky_anchor_sidebar_cta",
+        "label": "CTA",
+        "name": "sticky_anchor_sidebar_cta",
+        "type": "link",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "return_format": "array"
+      },
+      {
+        "key": "field_inkwell_sticky_anchor_sidebar_eyebrow",
+        "label": "Eyebrow",
+        "name": "sticky_anchor_sidebar_eyebrow",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_sticky_anchor_sidebar_title",
+        "label": "Heading",
+        "name": "sticky_anchor_sidebar_title",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_sticky_anchor_sidebar_content",
+        "label": "Content",
+        "name": "sticky_anchor_sidebar_content",
+        "type": "wysiwyg",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 0,
+        "delay": 0
+      },
+      {
+        "key": "field_inkwell_sticky_anchor_sidebar_image",
+        "label": "Image",
+        "name": "sticky_anchor_sidebar_image",
+        "type": "image",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "return_format": "array",
+        "library": "all",
+        "preview_size": "medium"
+      },
+      {
+        "key": "field_inkwell_sticky_anchor_sidebar_section_settings",
+        "label": "Section Settings",
+        "name": "sticky_anchor_sidebar_section_settings",
+        "type": "group",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "layout": "block",
+        "sub_fields": [
+          {
+            "key": "field_inkwell_sticky_anchor_sidebar_background",
+            "label": "Background",
+            "name": "sticky_anchor_sidebar_background",
+            "type": "select",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "choices": {
+              "white": "White",
+              "light": "Light grey",
+              "navy": "Navy"
+            },
+            "default_value": "white",
+            "return_format": "value",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0
+          },
+          {
+            "key": "field_inkwell_sticky_anchor_sidebar_padding",
+            "label": "Vertical Spacing",
+            "name": "sticky_anchor_sidebar_padding",
+            "type": "select",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "choices": {
+              "none": "None",
+              "small": "Small",
+              "medium": "Medium",
+              "large": "Large"
+            },
+            "default_value": "medium",
+            "return_format": "value",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0
+          },
+          {
+            "key": "field_inkwell_sticky_anchor_sidebar_width",
+            "label": "Container Width",
+            "name": "sticky_anchor_sidebar_width",
+            "type": "select",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "choices": {
+              "content": "Content",
+              "standard": "Standard",
+              "wide": "Wide"
+            },
+            "default_value": "standard",
+            "return_format": "value",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0
+          }
+        ]
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "inkwell/sticky-anchor-sidebar"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Fields for the Sticky Anchor Sidebar block.",
+    "show_in_rest": 0
+  }
+]

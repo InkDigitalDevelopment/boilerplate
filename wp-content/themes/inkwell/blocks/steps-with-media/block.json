@@ -1,0 +1,29 @@
+{
+  "$schema": "https://raw.githubusercontent.com/AdvancedCustomFields/schemas/refs/heads/main/json/block.json",
+  "apiVersion": 3,
+  "name": "inkwell/steps-with-media",
+  "title": "Steps With Media",
+  "description": "Sequential image-led process stages.",
+  "category": "inkwell-components",
+  "icon": "editor-ol",
+  "keywords": [
+    "steps",
+    "with",
+    "media"
+  ],
+  "acf": {
+    "blockVersion": 3,
+    "renderTemplate": "render.php",
+    "hideFieldsInSidebar": true,
+    "expandedEditorButtonText": "Edit Steps With Media",
+    "expandedEditorButtons": {
+      "sidebar": false,
+      "toolbar": true
+    }
+  },
+  "supports": {
+    "align": false,
+    "anchor": true,
+    "customClassName": false
+  }
+}

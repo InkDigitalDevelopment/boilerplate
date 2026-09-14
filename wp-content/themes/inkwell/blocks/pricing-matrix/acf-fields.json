@@ -1,0 +1,355 @@
+[
+  {
+    "key": "group_inkwell_pricing_matrix",
+    "title": "Block: Pricing Comparison Matrix",
+    "fields": [
+      {
+        "key": "field_inkwell_pricing_matrix_eyebrow",
+        "label": "Eyebrow",
+        "name": "pricing_matrix_eyebrow",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_pricing_matrix_title",
+        "label": "Heading",
+        "name": "pricing_matrix_title",
+        "type": "text",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": ""
+      },
+      {
+        "key": "field_inkwell_pricing_matrix_intro",
+        "label": "Introduction",
+        "name": "pricing_matrix_intro",
+        "type": "textarea",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "rows": 4,
+        "new_lines": "br"
+      },
+      {
+        "key": "field_inkwell_pricing_matrix_packages",
+        "label": "Packages",
+        "name": "pricing_matrix_packages",
+        "type": "repeater",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "layout": "block",
+        "pagination": 0,
+        "min": 2,
+        "max": 3,
+        "collapsed": "field_inkwell_pricing_matrix_package_name",
+        "button_label": "Add Package",
+        "rows_per_page": 20,
+        "sub_fields": [
+          {
+            "key": "field_inkwell_pricing_matrix_package_name",
+            "label": "Name",
+            "name": "pricing_matrix_package_name",
+            "type": "text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": ""
+          },
+          {
+            "key": "field_inkwell_pricing_matrix_package_subtitle",
+            "label": "Subtitle",
+            "name": "pricing_matrix_package_subtitle",
+            "type": "text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": ""
+          },
+          {
+            "key": "field_inkwell_pricing_matrix_package_price",
+            "label": "Price",
+            "name": "pricing_matrix_package_price",
+            "type": "text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": ""
+          },
+          {
+            "key": "field_inkwell_pricing_matrix_price_suffix",
+            "label": "Price Suffix",
+            "name": "pricing_matrix_price_suffix",
+            "type": "text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": ""
+          },
+          {
+            "key": "field_inkwell_pricing_matrix_package_cta",
+            "label": "CTA",
+            "name": "pricing_matrix_package_cta",
+            "type": "link",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "return_format": "array"
+          },
+          {
+            "key": "field_inkwell_pricing_matrix_recommended",
+            "label": "Recommended",
+            "name": "pricing_matrix_recommended",
+            "type": "true_false",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+          }
+        ]
+      },
+      {
+        "key": "field_inkwell_pricing_matrix_features",
+        "label": "Features",
+        "name": "pricing_matrix_features",
+        "type": "repeater",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "layout": "block",
+        "pagination": 0,
+        "min": 1,
+        "max": 12,
+        "collapsed": "field_inkwell_pricing_matrix_feature_name",
+        "button_label": "Add Feature",
+        "rows_per_page": 20,
+        "sub_fields": [
+          {
+            "key": "field_inkwell_pricing_matrix_feature_name",
+            "label": "Feature Name",
+            "name": "pricing_matrix_feature_name",
+            "type": "text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": ""
+          },
+          {
+            "key": "field_inkwell_pricing_matrix_values",
+            "label": "Package Values",
+            "name": "pricing_matrix_values",
+            "type": "repeater",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 2,
+            "max": 3,
+            "collapsed": "field_inkwell_pricing_matrix_feature_value",
+            "button_label": "Add Package Value",
+            "rows_per_page": 20,
+            "sub_fields": [
+              {
+                "key": "field_inkwell_pricing_matrix_feature_value",
+                "label": "Value",
+                "name": "pricing_matrix_feature_value",
+                "type": "text",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                  "width": "",
+                  "class": "",
+                  "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "instructions": "Use ✓ for included, — for unavailable, or enter text."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "field_inkwell_pricing_matrix_section_settings",
+        "label": "Section Settings",
+        "name": "pricing_matrix_section_settings",
+        "type": "group",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "layout": "block",
+        "sub_fields": [
+          {
+            "key": "field_inkwell_pricing_matrix_background",
+            "label": "Background",
+            "name": "pricing_matrix_background",
+            "type": "select",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "choices": {
+              "white": "White",
+              "light": "Light grey",
+              "navy": "Navy"
+            },
+            "default_value": "white",
+            "return_format": "value",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0
+          },
+          {
+            "key": "field_inkwell_pricing_matrix_padding",
+            "label": "Vertical Spacing",
+            "name": "pricing_matrix_padding",
+            "type": "select",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "choices": {
+              "none": "None",
+              "small": "Small",
+              "medium": "Medium",
+              "large": "Large"
+            },
+            "default_value": "medium",
+            "return_format": "value",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0
+          },
+          {
+            "key": "field_inkwell_pricing_matrix_width",
+            "label": "Container Width",
+            "name": "pricing_matrix_width",
+            "type": "select",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "choices": {
+              "content": "Content",
+              "standard": "Standard",
+              "wide": "Wide"
+            },
+            "default_value": "standard",
+            "return_format": "value",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0
+          }
+        ]
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "inkwell/pricing-matrix"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Fields for the Pricing Comparison Matrix block.",
+    "show_in_rest": 0
+  }
+]

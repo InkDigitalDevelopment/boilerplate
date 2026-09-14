@@ -1,0 +1,29 @@
+{
+  "$schema": "https://raw.githubusercontent.com/AdvancedCustomFields/schemas/refs/heads/main/json/block.json",
+  "apiVersion": 3,
+  "name": "inkwell/sticky-side-content",
+  "title": "Sticky Side Content",
+  "description": "Accessible tabbed service content with a sticky side menu.",
+  "category": "inkwell-components",
+  "icon": "align-left",
+  "keywords": [
+    "sticky",
+    "side",
+    "content"
+  ],
+  "acf": {
+    "blockVersion": 3,
+    "renderTemplate": "render.php",
+    "hideFieldsInSidebar": true,
+    "expandedEditorButtonText": "Edit Sticky Side Content",
+    "expandedEditorButtons": {
+      "sidebar": false,
+      "toolbar": true
+    }
+  },
+  "supports": {
+    "align": false,
+    "anchor": true,
+    "customClassName": false
+  }
+}
